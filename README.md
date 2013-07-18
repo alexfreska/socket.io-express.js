@@ -15,6 +15,9 @@ Install
 
     npm install
 
+Usage
+-----
+
 To start server:
 
-node server.js
+    node server.js
