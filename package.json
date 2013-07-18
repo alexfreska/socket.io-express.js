@@ -1,0 +1,10 @@
+{
+    "name": "app",
+    "version": "0.0.1",
+    "description": "app",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "path": "latest"
+    }
+}
