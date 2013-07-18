@@ -17,3 +17,7 @@ Usage
 To start server:
 
     node server.js
+    
+Open your browser to:
+
+    localhost:3000
