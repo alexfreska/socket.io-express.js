@@ -3,15 +3,11 @@ socket.io-express
 
 Basic socket.io express server.
 
-Setup
-=====
-
-To install dependencies run:
-
-npm install
 
 Install
 -------
+
+To install dependencies run:
 
     npm install
 
