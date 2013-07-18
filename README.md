@@ -1,7 +1,7 @@
 socket.io-express
 =================
 
-Basic socket.io express server.
+NodeJS express server with socket.io setup. Great starting point for building socket.io applications.
 
 
 Install
