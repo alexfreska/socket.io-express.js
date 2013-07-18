@@ -1,21 +1,22 @@
-var application_root 	= __dirname,
-	express				= require('express'),
-	path 				= require('path'),
-	http 				= require('http');
+var application_root    = __dirname,
+    express             = require('express'),
+    path                = require('path'),
+    http                = require('http');
 
-var app = module.exports 	= express(),
-	server 					= http.createServer(app),
-	io 						= require('socket.io').listen(server);
+var app = module.exports    = express(),
+    server                  = http.createServer(app),
+    io                      = require('socket.io').listen(server);
 
 
-// uncomment to downgrade to long polling ajax
-// 
+// Uncomment to fallback to long polling ajax.
+// Useful for deploying to Heroku.
+
 // io.configure(function () {
 //   io.set("transports", ["xhr-polling"]);
 //   io.set("polling duration", 10);
 // });
 
-// Configure server
+// Standard server config
 app.configure(function() {
 
     //parses request body and populates request.body
@@ -40,11 +41,13 @@ app.configure(function() {
 
 
 io.sockets.on('connection', function (socket) {
-	//do stuff
+	// do socket stuff here.
 });
 
+// check / set port
 var port = process.env.PORT || 3000;
+
+// check for parent
 if (!module.parent) {
   server.listen(port);
-  //console.log("Backbone.ioBind Example App listening on port %d in %s mode", server.address().port, app.settings.env);
 }
