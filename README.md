@@ -10,6 +10,11 @@ To install dependencies run:
 
 npm install
 
+Install
+-------
+
+    npm install
+
 To start server:
 
 node server.js
