@@ -1,4 +1,4 @@
-socket.io-express
+SocketIO-ExpressJS
 =================
 
 NodeJS express server with socket.io setup. Great starting point for building socket.io applications.
