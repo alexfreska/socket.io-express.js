@@ -1,11 +1,11 @@
-var application_root 	= __dirname,
-	express				= require('express'),
-	path 				= require('path'),
-	http 				= require('http');
+var application_root    = __dirname,
+    express             = require('express'),
+    path                = require('path'),
+    http                = require('http');
 
-var app = module.exports 	= express(),
-	server 					= http.createServer(app),
-	io 						= require('socket.io').listen(server);
+var app = module.exports    = express(),
+    server                  = http.createServer(app),
+    io                      = require('socket.io').listen(server);
 
 
 // Uncomment to fallback to long polling ajax.
